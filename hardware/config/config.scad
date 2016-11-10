@@ -28,7 +28,7 @@ dw 				= DefaultWall;
 tw 				= ThickWall;
 
 // Global design parameters
-
+ArmLength = 85/2;
 
 
 

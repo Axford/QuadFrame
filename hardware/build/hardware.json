@@ -1,0 +1,373 @@
+[
+    {
+        "cut": [],
+        "hash": "a6f8cb07aa8226ef878a2a7420e431d1",
+        "vitamins": [
+            {
+                "hash": "e3a1c44fb6eea7ab636bb7014dd9d385",
+                "title": "CL072014 DC Motor",
+                "views": [
+                    {
+                        "rotate": [
+                            340,
+                            25,
+                            0
+                        ],
+                        "dist": 280,
+                        "title": "view",
+                        "filepath": "../../vitamins/images/CL072014DCMotor_view.png",
+                        "caption": "view",
+                        "translate": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "type": "view",
+                        "size": [
+                            400,
+                            300
+                        ]
+                    }
+                ],
+                "qty": 4,
+                "parts": [],
+                "call": "DCMotor(DCMotor_CL072014)",
+                "file": "vitamins/DCMotor.scad"
+            }
+        ],
+        "title": "QuadFrame",
+        "assemblies": [
+            {
+                "cut": [],
+                "hash": "3e3c0fbdbe9f177cb1afd316537f4a4b",
+                "vitamins": [
+                    {
+                        "title": "CL072014 DC Motor",
+                        "views": [],
+                        "qty": 4,
+                        "parts": [],
+                        "call": "DCMotor(DCMotor_CL072014)",
+                        "file": "vitamins/DCMotor.scad"
+                    }
+                ],
+                "views": [],
+                "assemblies": [],
+                "title": "Final Assembly",
+                "qty": 1,
+                "call": "FinalAssembly()",
+                "printed": [
+                    {
+                        "markdown": [],
+                        "title": "Frame",
+                        "views": [],
+                        "qty": 1,
+                        "call": "Frame_STL()",
+                        "file": "printedparts/Frame.scad"
+                    }
+                ],
+                "file": "assemblies/Final.scad",
+                "animations": [],
+                "steps": [
+                    {
+                        "desc": "Insert the motors",
+                        "num": 1,
+                        "views": [
+                            {
+                                "rotate": [
+                                    52,
+                                    0,
+                                    218
+                                ],
+                                "dist": 400,
+                                "filepath": "../../assemblies/QuadFrame/FinalAssembly_step1_view.png",
+                                "title": "view",
+                                "caption": "view",
+                                "translate": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "type": "view",
+                                "size": [
+                                    400,
+                                    300
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "level": 0
+            }
+        ],
+        "printed": [
+            {
+                "markdown": [],
+                "hash": "cdb70ea604a7ba639c68ed0d87e463f8",
+                "plasticWeight": 0.0075,
+                "title": "Frame",
+                "aabb": [
+                    [
+                        -36.302,
+                        -36.302,
+                        -15.0
+                    ],
+                    [
+                        36.302,
+                        36.302,
+                        0.0
+                    ]
+                ],
+                "views": [
+                    {
+                        "rotate": [
+                            72,
+                            0,
+                            130
+                        ],
+                        "dist": 400,
+                        "title": "view",
+                        "filepath": "../../printedparts/images/Frame_view.png",
+                        "caption": "view",
+                        "translate": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "type": "view",
+                        "size": [
+                            400,
+                            300
+                        ]
+                    }
+                ],
+                "qty": 1,
+                "volume": 6056.37482419201,
+                "area": 5262.567112710221,
+                "plasticVolume": 6.0,
+                "call": "Frame_STL()",
+                "file": "printedparts/Frame.scad"
+            }
+        ],
+        "file": "QuadFrame.scad",
+        "type": "machine",
+        "children": [
+            {
+                "rotate": [
+                    73,
+                    0,
+                    229
+                ],
+                "dist": 1951,
+                "title": "view",
+                "filepath": "../../images/QuadFrame_view.png",
+                "caption": "view",
+                "translate": [
+                    68,
+                    49,
+                    -37
+                ],
+                "type": "view",
+                "size": [
+                    1024,
+                    768
+                ]
+            },
+            {
+                "call": "FinalAssembly()",
+                "type": "assembly",
+                "children": [
+                    {
+                        "call": "Frame_STL()",
+                        "type": "printed",
+                        "children": [
+                            {
+                                "rotate": [
+                                    72,
+                                    0,
+                                    130
+                                ],
+                                "dist": 400,
+                                "title": "view",
+                                "caption": "view",
+                                "translate": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "type": "view",
+                                "size": [
+                                    400,
+                                    300
+                                ]
+                            }
+                        ],
+                        "file": "printedparts/Frame.scad",
+                        "title": "Frame"
+                    },
+                    {
+                        "num": 1,
+                        "type": "step",
+                        "children": [
+                            {
+                                "rotate": [
+                                    52,
+                                    0,
+                                    218
+                                ],
+                                "dist": 400,
+                                "title": "view",
+                                "caption": "view",
+                                "translate": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "type": "view",
+                                "size": [
+                                    400,
+                                    300
+                                ]
+                            },
+                            {
+                                "call": "DCMotor(DCMotor_CL072014)",
+                                "type": "vitamin",
+                                "children": [
+                                    {
+                                        "rotate": [
+                                            340,
+                                            25,
+                                            0
+                                        ],
+                                        "dist": 280,
+                                        "title": "view",
+                                        "caption": "view",
+                                        "translate": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "type": "view",
+                                        "size": [
+                                            400,
+                                            300
+                                        ]
+                                    }
+                                ],
+                                "file": "vitamins/DCMotor.scad",
+                                "title": "CL072014 DC Motor"
+                            },
+                            {
+                                "call": "DCMotor(DCMotor_CL072014)",
+                                "type": "vitamin",
+                                "children": [
+                                    {
+                                        "rotate": [
+                                            340,
+                                            25,
+                                            0
+                                        ],
+                                        "dist": 280,
+                                        "title": "view",
+                                        "caption": "view",
+                                        "translate": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "type": "view",
+                                        "size": [
+                                            400,
+                                            300
+                                        ]
+                                    }
+                                ],
+                                "file": "vitamins/DCMotor.scad",
+                                "title": "CL072014 DC Motor"
+                            },
+                            {
+                                "call": "DCMotor(DCMotor_CL072014)",
+                                "type": "vitamin",
+                                "children": [
+                                    {
+                                        "rotate": [
+                                            340,
+                                            25,
+                                            0
+                                        ],
+                                        "dist": 280,
+                                        "title": "view",
+                                        "caption": "view",
+                                        "translate": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "type": "view",
+                                        "size": [
+                                            400,
+                                            300
+                                        ]
+                                    }
+                                ],
+                                "file": "vitamins/DCMotor.scad",
+                                "title": "CL072014 DC Motor"
+                            },
+                            {
+                                "call": "DCMotor(DCMotor_CL072014)",
+                                "type": "vitamin",
+                                "children": [
+                                    {
+                                        "rotate": [
+                                            340,
+                                            25,
+                                            0
+                                        ],
+                                        "dist": 280,
+                                        "title": "view",
+                                        "caption": "view",
+                                        "translate": [
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "type": "view",
+                                        "size": [
+                                            400,
+                                            300
+                                        ]
+                                    }
+                                ],
+                                "file": "vitamins/DCMotor.scad",
+                                "title": "CL072014 DC Motor"
+                            }
+                        ],
+                        "desc": "Insert the motors"
+                    }
+                ],
+                "file": "assemblies/Final.scad",
+                "title": "Final Assembly"
+            }
+        ]
+    },
+    {
+        "files": [
+            {
+                "type": "file",
+                "file": "QuadFrame.scad"
+            },
+            {
+                "type": "file",
+                "file": "assemblies/Final.scad"
+            },
+            {
+                "type": "file",
+                "file": "printedparts/Frame.scad"
+            },
+            {
+                "type": "file",
+                "file": "vitamins/DCMotor.scad"
+            }
+        ],
+        "type": "filelist"
+    }
+]
